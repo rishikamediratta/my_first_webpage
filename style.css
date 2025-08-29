@@ -1,0 +1,330 @@
+body {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  /* other styles remain unchanged */
+  color: #eee;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+.site-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: transparent;
+    padding: 32px 54px 0 54px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+
+.logo-left {
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 44px;
+}
+
+.site-header nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 2px;
+    transition: color 0.2s;
+    border-bottom: none;
+}
+.site-header nav a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.hero-section, .project-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    position: relative;
+}
+
+.hero-center {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.iam {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #8e939d;
+    margin-bottom: 14px;
+}
+
+.hero-title {
+    font-size: 74px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #f3f3f3;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #8e939d;
+    letter-spacing: 3px;
+    margin-top: 2px;
+}
+
+.project-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    .project-list {
+  list-style-type: disc; /* keeps bullets */
+  padding-left: 20px;    /* gives space before bullets */
+}
+
+.project-list a {
+  color: white;          /* link color */
+  text-decoration: none; /* remove underline */
+}
+
+.project-list a:hover {
+  text-decoration: underline; /* underline only on hover */
+}
+}
+
+.project-images {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.img-thumb {
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+    background: #232329;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.img-thumb.main {
+    background: #202226;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.project-pic-content {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 7px;
+}
+.proj-title {
+    font-size: 17px;
+    color: #eee;
+    background: rgba(0,0,0,0.3);
+    padding: 4px 6px;
+    border-radius: 5px;
+}
+
+.img-thumb.blur {
+    background: #232329;
+    filter: blur(2.5px);
+}
+
+.project-center {
+    text-align: center;
+}
+
+.project-title {
+    font-size: 49px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #f3f3f3;
+    margin-bottom: 14px;
+}
+
+.project-desc {
+    font-size: 15px;
+    color: #bbb;
+    margin: 0 auto 18px auto;
+    max-width: 560px;
+}
+
+.project-btn {
+    margin-top: 16px;
+    padding: 13px 44px;
+    background: #fff;
+    color: #18191d;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 17px;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.project-btn:hover {
+    background: #e7e7e7;
+    color: #101113;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 84px;
+    margin: 80px auto 0 auto;
+    padding: 40px 20px 60px 20px;
+    max-width: 950px;
+    background: transparent;
+    border-radius: 15px;
+}
+
+.contact-left {
+    flex: 1;
+    color: #ededed;
+    max-width: 330px;
+    text-align: left;
+}
+
+.contact-title {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.contact-description {
+    color: #b6b7b9;
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.contact-details div {
+    margin-bottom: 18px;
+    color: #bbb;
+    font-size: 15px;
+}
+
+.contact-right {
+    flex: 1.1;
+    min-width: 320px;
+    background: #232327;
+    border-radius: 13px;
+    box-shadow: 0 8px 35px #0005;
+    margin-top: 0;
+    padding: 36px 32px 30px 32px;
+}
+
+.contact-form-title {
+    color: #eee;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    margin-bottom: 35px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid #444950;
+    color: #ededed;
+    margin-bottom: 27px;
+    padding: 10px 2px 12px 4px;
+    font-size: 15px;
+    border-radius: 0;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom: 1.5px solid #fff;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 40px;
+    max-height: 130px;
+}
+
+.contact-form button {
+    margin-top: 12px;
+    align-self: flex-end;
+    background: #232327;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 13px 36px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 18px #0005;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: background 0.19s, color 0.19s;
+}
+.contact-form button:hover {
+    background: #fff;
+    color: #1b1c1f;
+}
+
+
+.side-scroll {
+    position: absolute;
+    right: 38px;
+    top: 46%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #bbb;
+    letter-spacing: 4px;
+    font-size: 14px;
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .site-header {
+        padding: 18px 8px 0 12px;
+    }
+    .hero-title,
+    .project-title {
+        font-size: 36px;
+    }
+    .logo-left {
+        font-size: 19px;
+    }
+    .project-images .img-thumb {
+        width: 80px;
+        height: 66px;
+    }
+}
+
+@media (max-width: 700px) {
+    .side-social,
+    .side-scroll {
+        display: none;
+    }
+}
+.side-social a {
+  display: block;
+  margin-bottom: 8px; /* adds spacing between them */
+}
+
